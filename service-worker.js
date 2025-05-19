@@ -2,7 +2,7 @@ self.addEventListener('install', function(e) {
   e.waitUntil(
     caches.open('trim-tool-v2').then(function(cache) {
       return cache.addAll([
-        './v2.html',
+        './index.html',
         './manifest.json',
       ]);
     })
